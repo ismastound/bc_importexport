@@ -20,7 +20,7 @@
           <key-binding alias="pdict" key="To_0"/>
           <key-binding alias="pdict.pid" key="From_1"/>
           <key-binding alias="pid" key="To_1"/>
-          <key-binding alias="&quot;/folder/productU.xml&quot;" key="From_2"/>
+          <key-binding alias="pdict.ExportFileName" key="From_2"/>
           <key-binding alias="ExportFileName" key="To_2"/>
           <key-binding alias="null" key="From_7"/>
           <key-binding alias="null" key="To_7"/>
@@ -47,7 +47,6 @@
           <config-property key="ScriptFile" value="utils/ProductByIdOrCategory.ds"/>
           <key-binding alias="Log" key="ScriptLog"/>
           <key-binding alias="apiProduct" key="apiProduct"/>
-          <key-binding alias="productCatalog" key="PSM"/>
           <key-binding alias="categoryId" key="categoryId"/>
           <key-binding alias="pid" key="pid"/>
           <key-binding alias="productCatalog" key="allProducts"/>
@@ -87,7 +86,7 @@
           <key-binding alias="null" key="ExportRecommendations"/>
           <key-binding alias="null" key="ExportProductOptions"/>
           <key-binding alias="null" key="ExportVariationAttributes"/>
-          <key-binding alias="apiProduct || productCatalog" key="Products"/>
+          <key-binding alias="apiProduct" key="Products"/>
           <key-binding alias="masterCatalog" key="Catalog"/>
         </pipelet-node>
         <node-display x="0" y="1"/>
