@@ -59,3 +59,6 @@ Go to Administration > Operations > Jobs.
 - Install  UX Studio plug-in [Install UX Studio](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp?topic=%2Fcom.demandware.dochelp%2FLegacyDevDoc%2FInstallUXStudio.html&resultof=%22%45%63%6c%69%70%73%65%22%20%22%65%63%6c%69%70%73%22%20 "Install UX Studio")
 
 - After complete the Server Connection and import our cartridge, you can see our pipeline in grafic mode, and also the script that is part of this flow.
+- This is how it see our pipeline **ExportProductsByIdOrByCategory.xml**
+- 
+![](https://i.ibb.co/1qWkRMh/pipeline-Export-Products-By-Id-Or-By-Category-xml.png)
