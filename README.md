@@ -3,6 +3,7 @@
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 This repository uses a pipeline that works with the ExportCatalog pipelet and a script that uses salesforce commerce cloud classes, which through a job executes and exports a product or several products, depending on the parameters passed to it, in .xml format. This file is generated in the IMPEX directory.
+
 ![](https://i.ibb.co/Xt9n1mc/Export-File.png)
 
 #Cartridge Path Considerations
@@ -17,7 +18,8 @@ In the Cartridges field, add the new cartridge path: bc_importexport. It must be
 
 # Get Started
 ### Requirements
-####Install and Upload the Cartridge
+#### Install and Upload the bc_importexport Cartridge
+
 Clone this repository. The name of the top-level directory bc_importexport.
 
 From the bc_importexport directory, run npm install. This command installs all of the package dependencies.
@@ -34,7 +36,7 @@ From the bc_importexport directory, npm run uploadCartridge.
 
 For more information on uploading the cartridge, see the following topic on the B2C Commerce Infocenter: [Upload Code for SFRA](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2Fcontent%2Fb2c_commerce%2Ftopics%2Fsfra%2Fb2c_uploading_code.html "Upload Code for SFRA").
 
-#Create Job
+# Create Job
 Log in to Business Manager.
 Go to Administration > Operations > Jobs.
 ![](https://i.ibb.co/0r3W0cG/Create-New-Job.png)
@@ -48,7 +50,7 @@ Go to Administration > Operations > Jobs.
 
 - Then run the job and see the IMPEX directory in the webdav to see our product or products
 
-#If you want to use Eclipse IDE
+# If you want to use Eclipse IDE
 - Your need to instal this version [Neon 4.6](https://www.eclipse.org/downloads/packages/release/neon/3 "Neon 4.6")
  You can see how to configure in this link: [Configure Eclipse IDE](https://confluence.ontrq.com/pages/viewpage.action?spaceKey=ACDC&title=Lab%3A+Eclipse+IDE+Setup "Configure Eclipse IDE")
  
