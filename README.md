@@ -60,5 +60,5 @@ Go to Administration > Operations > Jobs.
 
 - After complete the Server Connection and import our cartridge, you can see our pipeline in grafic mode, and also the script that is part of this flow.
 - This is how it see our pipeline **ExportProductsByIdOrByCategory.xml**
-- 
+
 ![](https://i.ibb.co/1qWkRMh/pipeline-Export-Products-By-Id-Or-By-Category-xml.png)
