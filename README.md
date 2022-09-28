@@ -1,12 +1,16 @@
-### Get product or Get Products from a Category
+### Generate a zip file to migrate product or products
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
-This repository uses a pipeline that works with the ExportCatalog pipelet and a script that uses salesforce commerce cloud classes, which through a job executes and exports a product or several products, depending on the parameters passed to it, in .xml format. This file is generated in the IMPEX directory.
+This repository uses a pipeline that works with the ExportCatalog pipelet and a script that uses salesforce commerce cloud classes, which through a job executes and exports a product or several products, depending on the parameters passed to it, in .xml format. This file is generated in the IMPEX directory, with an special structure, and also generate the inventory list and pricebooks with the same structure in the same folder. This folder is copy into a special folder in the IMPEX too, like this: src/instance and is compress in a .zip folder. In this way, you can reach it from other instance from:
 
-![](https://i.ibb.co/Xt9n1mc/Export-File.png)
+Administration > Site Development > Site Import & Export --> Remote 
 
-#Cartridge Path Considerations
+![](https://i.ibb.co/K60vKLQ/migration-File.png)
+
+![](https://i.ibb.co/yhRwqJB/Create-the-structure-for-copy-into-instance-folder-in-a-zip-file.png)
+
+# Cartridge Path Considerations
 bc_importexport cartridge requires the app_storefront_base cartridge or SFRA Architecture.
 
 Log in to Business Manager.
