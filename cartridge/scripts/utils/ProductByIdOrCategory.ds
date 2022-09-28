@@ -23,8 +23,6 @@ function execute(pdict) {
 		var iterator1 = productArray.iterator();
 		pdict.apiProduct = iterator1;
 		
-		var a = 5;
-		
 	} else if(pdict.categoryId) {	
 		var ProductSearchModel = require('dw/catalog/ProductSearchModel');
 		var PSM = new ProductSearchModel();
