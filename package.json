@@ -1,5 +1,5 @@
 {
-    "name": "sfra-boilerplate",
+    "name": "bc_importexport",
     "version": "2.4.0",
     "description": "Astound architecture for SFRA projects",
     "main": "npm start",
