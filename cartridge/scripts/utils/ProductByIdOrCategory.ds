@@ -2,7 +2,6 @@
  * @input pid : String
  * @input categoryId : String
  * @output apiProduct : dw.util.Iterator
- * @output allProducts : dw.util.Iterator
  *
  */
  
@@ -18,10 +17,11 @@ function execute(pdict) {
 	if (pdict.pid) {
 		var ProductMgr = require('dw/catalog/ProductMgr');
 		var sfccProduct = ProductMgr.getProduct(pdict.pid);
-		productArray.push(sfccProduct);
 		
-		var iterator1 = productArray.iterator();
-		pdict.apiProduct = iterator1;
+		if (sfccProduct) {
+			productArray.push(sfccProduct);		
+			
+		} 
 		
 	} else if(pdict.categoryId) {	
 		var ProductSearchModel = require('dw/catalog/ProductSearchModel');
@@ -37,11 +37,9 @@ function execute(pdict) {
 
     		productArray.push(searchHit.getProduct());
 		}
-
-		var productIterator = productArray.iterator();
-		
-		pdict.allProducts = productIterator;
 	}
-
+	
+		pdict.apiProduct = productArray.iterator();
+		
 		return PIPELET_NEXT;
 }
