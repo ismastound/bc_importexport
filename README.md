@@ -52,7 +52,9 @@ Go to Administration > Operations > Jobs.
 
 - If you pass the pid parameter you can search for a particular product, instead if you pass categoryId parameter, you can search for all the products in that specific category. You must to pass one or other, no both. (pid, categoryId). The other parameter is catalogId that is necessary to use this ExportCatalog Pipelet and for categoryId search you need to use the boilerplate-master-catalog because the class ProductSearchModel just work whit this catalog.
 
-- Then run the job and see the IMPEX directory in the webdav to see our product or products
+- You need to do another 3 steps to export the inventory, and pricebook data with his pipelets ExportInventoryLists and ExportPriceBook, and the last step is to remove that files created and move it in a zip file (with the structure that needs the arquitecture) to a shared folder in the WebDav call instance, and we create the zip folder call migration.zip. With this zip folder in this share folder, you can import remotely in the sandbox instance you want, but just in the SIG.   
+
+- Then run the job and see the IMPEX/src/instance directory in the webdav to see our file migration.zip, and use this product information in the instance you need it.
 
 # If you want to use Eclipse IDE
 - Your need to instal this version [Neon 4.6](https://www.eclipse.org/downloads/packages/release/neon/3 "Neon 4.6")
