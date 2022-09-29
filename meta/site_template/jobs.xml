@@ -44,8 +44,8 @@
                     <parameter name="SourceFolder">src/migration/catalogs/boilerplate-master-catalog</parameter>
                     <parameter name="TargetFolder">src/instance</parameter>
                     <parameter name="ArchiveName">migration.zip</parameter>
-                    <parameter name="RemoveFilesFromSourceFolder">false</parameter>
-                    <parameter name="RemoveSourceFolderAfterCompletion">false</parameter>
+                    <parameter name="RemoveFilesFromSourceFolder">true</parameter>
+                    <parameter name="RemoveSourceFolderAfterCompletion">true</parameter>
                     <parameter name="NoFileFoundStatus">ERROR</parameter>
                     <parameter name="IsDisabled">false</parameter>
                 </parameters>
