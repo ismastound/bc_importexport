@@ -24,7 +24,7 @@ In the Cartridges field, add the new cartridge path: bc_importexport. It must be
 ### Requirements
 #### Install and Upload the bc_importexport Cartridge
 
-Clone this repository. The name of the top-level directory bc_importexport.
+Clone this repository. The name of the top-level directory bc_importexport and also you need the bc_job_components cartridge to allow to zip the file.
 
 From the bc_importexport directory, run npm install. This command installs all of the package dependencies.
 
